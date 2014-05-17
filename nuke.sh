@@ -1,3 +1,11 @@
+echo " ________          __ __________.__        _______         __             "
+echo " \______ \   _____/  |\____    /|__|_____  \      \  __ __|  | __ ____    "
+echo "  |    |  \ /  _ \   __\/     / |  \____ \ /   |   \|  |  \  |/ // __ \   "
+echo "  |    |   (  <_> )  | /     /_ |  |  |_> >    |    \  |  /    <\  ___/   "
+echo " /_______  /\____/|__|/_______ \|__|   __/\____|__  /____/|__|_ \\\___  >  "
+echo "         \/                   \/   |__|           \/           \/    \/   "
+echo " "
+
 #!/bin/bash
 
 if [ ! -d "/home/sscan/backLogs" ]
@@ -30,14 +38,3 @@ done
 echo "Results can be found in /home/sscan/backLogs/"$fileBackLog
 echo "Done!"
 
-
-# previous code
-# echo "Finding Akeeba Backups..."
-# find /home*/*/public_html/*/administrator/components/com_akeeba/backup/ -name '*.zip*' >> backupsfound.log
-# find /home*/*/public_html/administrator/components/com_akeeba/backup/  -name '*.zip*' >> backupsfound.log
-# echo "Finding Backup Buddy Backups..."
-# find /home*/*/public_html/wp-content/uploads/backupbuddy_backups/ -name '*.zip' >> backupsfound.log
-# find /home*/*/public_html/*/wp-content/uploads/backupbuddy_backups/ -name '*.zip' >> backupsfound.log
-# echo "Finding Large Zip files. (DotZipNuke)..."
-# find /home*/* -type f -name '*.zip*' -size +500M >> backupsfound.log
-# echo "Done! Check backupsfound.log"
