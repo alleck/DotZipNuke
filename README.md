@@ -6,4 +6,6 @@ DotZipNuke is a simple script to run on your CentOS or RHEL (Red Hat Enterprise 
 
 To use: Run it using <code>sh nuke.sh</code>
 
-It does not currently Delete the files. It saves them to a file called backupsfound.log in the folder you ran it in.
+It does not currently Delete the files. It saves the scan results to "{TimeStamp}_backfind.log" in the '/home/sscan/backLogs/' folder. 
+
+Part of the **SatyrScan** System
