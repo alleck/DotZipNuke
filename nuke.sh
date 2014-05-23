@@ -9,6 +9,12 @@ echo -e "\033[0m "
 
 #!/bin/bash
 
+if [ ! -d "/home/sscan" ]
+then
+mkdir /home/sscan
+chmod 755 /home/sscan
+fi
+
 if [ ! -d "/home/sscan/backLogs" ]
 then
 mkdir /home/sscan/backLogs
@@ -33,7 +39,7 @@ echo -e "\e[093;1mDone! Check backupsfound.log\e[0m"
 
 for file in `cat backupsfound.log | cut -d":" -f1`
 do
-        ls -lh $file | awk '{print $5,$9;}' >> ./backLogs/$fileBackLog
+        ls -lh $file | awk '{print $5,$9;}' >> /home/sscan/backLogs/$fileBackLog
 done
 
 echo "Results can be found in /home/sscan/backLogs/"$fileBackLog
