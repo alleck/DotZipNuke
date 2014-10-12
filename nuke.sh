@@ -33,7 +33,7 @@ find /home*/*/public_html/*/wp-content/uploads/backupbuddy_backups/ -name '*.zip
 find /home*/*/public_html/wp-content/uploads/backupbuddy_backups/ -name '*.zip' >> backupsfound.log
 echo -e "\e[092;1mFinished Backup Buddy Backups\e[0m"
 echo -e "\e[093;1mFinding Large Zip files. (DotZipNuke)...\e[0m"
-find /home*/* -type f -name '*.zip*' -size +200M >> backupsfound.log
+find /home*/* -type f -name '*.zip*' -size +50M >> backupsfound.log
 echo -e "\e[093;1mDone! Check backupsfound.log\e[0m"
 
 
